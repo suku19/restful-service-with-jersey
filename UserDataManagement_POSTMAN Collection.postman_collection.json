@@ -1,0 +1,206 @@
+{
+	"id": "5ec23529-865b-14d5-d304-560d5483b7f3",
+	"name": "UserDataManagement_POSTMAN Collection",
+	"description": "",
+	"order": [
+		"b953c8c8-afb7-96a6-2ee0-c7ae58dff6f3",
+		"3a28bc5e-ed9b-d35d-79fe-dd0c80ee2993",
+		"b41d7d5e-09d3-ac38-e61f-0806fe3bb48a",
+		"7839a2b8-2675-0475-7da4-ecf1e8104467",
+		"b909658b-ae54-1401-083b-fd0610793baa"
+	],
+	"folders": [],
+	"timestamp": 1496497680550,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "3a28bc5e-ed9b-d35d-79fe-dd0c80ee2993",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/restful-service-with-jersey/rest/users",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1497870169104,
+			"name": "addData",
+			"description": "",
+			"collectionId": "5ec23529-865b-14d5-d304-560d5483b7f3",
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 999,
+					"headers": [
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "5",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Sat, 03 Jun 2017 16:45:01 GMT",
+							"description": "The date and time that the message was sent"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "Saved",
+					"language": "plainText",
+					"rawDataType": "text",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"name": "Response",
+					"id": "521e3f7b-2cd3-21ff-b053-948ec930e50a",
+					"request": {
+						"url": "http://localhost:8080/users",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"enabled": true
+							}
+						],
+						"headers": "Content-Type: application/json\n",
+						"data": "{\n  \"name\": \"Jhon Dao\",\n  \"email\": \"jhondao@test.com\",\n  \"profession\": \"Software Engineer\"\n}",
+						"method": "PUT",
+						"dataMode": "raw"
+					},
+					"owner": 0
+				}
+			],
+			"rawModeData": "{\n  \"name\": \"Jhon Dao\",\n  \"email\": \"jhondao@test.com\",\n  \"profession\": \"Software Engineer\"\n}"
+		},
+		{
+			"id": "7839a2b8-2675-0475-7da4-ecf1e8104467",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8080/restful-service-with-jersey/rest/users/1",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1497873429615,
+			"name": "getUserById",
+			"description": "",
+			"collectionId": "5ec23529-865b-14d5-d304-560d5483b7f3",
+			"responses": []
+		},
+		{
+			"id": "b41d7d5e-09d3-ac38-e61f-0806fe3bb48a",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/restful-service-with-jersey/rest/users",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1497873383400,
+			"name": "updateUser",
+			"description": "",
+			"collectionId": "5ec23529-865b-14d5-d304-560d5483b7f3",
+			"responses": [],
+			"rawModeData": "{\n  \"id\":1,\n  \"name\": \"Jhon Dao\",\n  \"email\": \"jhondao@test.com\",\n  \"profession\": \"Software Developer\"\n}"
+		},
+		{
+			"id": "b909658b-ae54-1401-083b-fd0610793baa",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8080/restful-service-with-jersey/rest/users/1",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1497870220686,
+			"name": "deleteById",
+			"description": "",
+			"collectionId": "5ec23529-865b-14d5-d304-560d5483b7f3",
+			"responses": []
+		},
+		{
+			"id": "b953c8c8-afb7-96a6-2ee0-c7ae58dff6f3",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8080/restful-service-with-jersey/rest/users",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1497870090343,
+			"name": "getAllUser",
+			"description": "",
+			"collectionId": "5ec23529-865b-14d5-d304-560d5483b7f3",
+			"responses": []
+		}
+	]
+}
